@@ -35,6 +35,8 @@ if [ "$DISTRO" == "kali" ]; then
     apt-get install gobuster redis-server seclists firefox-esr xvfb python3-pip wpscan jq -y
 elif [ "$DISTRO" == "ubuntu" ]; then
     apt-get install python-pip python3-pip unzip redis-server firefox xvfb jq -y
+elif [ "$DISTRO" == "debian" ]; then
+    apt-get install python-pip python3-pip unzip redis-server firefox xvfb jq -y
 fi
 
 CELERYSTALK_DIR=`pwd`
