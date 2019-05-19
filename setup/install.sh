@@ -36,7 +36,7 @@ if [ "$DISTRO" == "kali" ]; then
 elif [ "$DISTRO" == "ubuntu" ]; then
     apt-get install python-pip python3-pip unzip redis-server firefox xvfb jq -y
 elif [ "$DISTRO" == "debian" ]; then
-    apt-get install python-pip python3-pip unzip redis-server firefox xvfb jq -y
+    apt-get install python-pip python3-pip unzip redis-server firefox-esr xvfb jq -y
 fi
 
 CELERYSTALK_DIR=`pwd`
